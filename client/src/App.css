@@ -1,30 +1,85 @@
-.app {
+.App {
+  width: 100%;
+  padding: 2rem;
+}
+
+header {
   text-align: center;
-  padding: 40px;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  min-height: 100vh;
+  margin-bottom: 3rem;
+  border-bottom: 2px solid #646cff;
+  padding-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 3em;
+  margin-bottom: 0.5rem;
+}
+
+header h2 {
+  font-size: 1.5em;
+  font-weight: 400;
+  color: #a0a9ff;
+}
+
+main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
+  gap: 2rem;
 }
 
-.app h1 {
-  font-size: 3em;
-  margin-bottom: 20px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+section {
+  padding: 1.5rem;
+  border: 1px solid #646cff;
+  border-radius: 8px;
+  background-color: rgba(100, 108, 255, 0.1);
 }
 
-.app p {
-  font-size: 1.2em;
-  margin: 10px 0;
+section h3 {
+  margin-bottom: 1rem;
+  color: #646cff;
 }
 
-.status {
-  background: rgba(255, 255, 255, 0.2);
-  padding: 10px 20px;
-  border-radius: 5px;
-  margin-top: 20px;
+.status p {
+  font-size: 1.1em;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.status .success {
+  background-color: rgba(76, 175, 80, 0.2);
+  color: #4caf50;
+  border-left: 4px solid #4caf50;
+}
+
+.status .error {
+  background-color: rgba(244, 67, 54, 0.2);
+  color: #f44336;
+  border-left: 4px solid #f44336;
+}
+
+.welcome {
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.welcome p {
+  color: #a0a9ff;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  header h2 {
+    font-size: 1em;
+  }
+
+  .App {
+    padding: 1rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
 }
